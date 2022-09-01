@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import pickle
 import numpy as np
-df=pd.read_csv('../datasets/Anime.csv')
-model=pickle.load(open(r'C:\Users\amanb\OneDrive\Desktop\Coding\Pyfiles\ipynbs\model.pkl','rb'))
+df=pd.read_csv('./Anime.csv')
+model=pickle.load(open('./model.pkl','rb'))
 
 def add_bg_from_url():
     st.markdown(
